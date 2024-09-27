@@ -1,0 +1,104 @@
+@font-face{
+    font-family: 'GoboldUplow';
+    src: url('icons/GoboldUplow.otf');
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html{
+    font-family: 'Arial';
+    font-size: normal;
+}
+body{
+    line-height: 1.3;
+    max-width: 1367px;
+    margin: 0 auto;
+    background: #DEF7FF;
+}
+button{
+    outline: 0;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+}
+#sides{
+    display: block;
+}
+.sidebar{
+    position: relative;
+    background: #313737;
+    color: #fff;
+    width: 25%;
+    min-height: 100vh;
+    padding: 20px 10px;
+}
+.Gobold{
+    font-family: 'GoboldUplow';
+}
+.menu{
+    margin: 15px 0;
+}
+.size-o{
+    margin-bottom: 10px;
+}
+.size-o button.btn{
+    font-size: 18px;
+    padding: 5px;
+    background: transparent;
+    border: none;
+    color: #fff;
+    width: 100%;
+    border-radius: 8px;
+    text-align: start;
+}
+.fo-i{
+    font-size: 22px;
+    width: 35px;
+}
+.text{
+    font-size: normal;
+    font-weight: bold;
+}
+.lorem{
+    padding: 15px;
+    width: 75%;
+}
+.nav{
+    display: none;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.btn-o{
+    font-size: 24px;
+    padding: 10px;
+    background: #313737;
+    color: #fff;
+    border: none;
+}
+#x{
+    display: none;
+}
+@media (max-width:600px){
+    #sides{
+        display: none;
+    }
+    .nav{
+        display: block;
+    }
+    .sidebar{
+        position: fixed;
+        width: 290px;
+    }
+    .lorem{
+        width: 100%;
+    }
+    #x{
+        display: block;
+        position: absolute;
+        right: -55px;
+        top: 10px;
+    }
+}
